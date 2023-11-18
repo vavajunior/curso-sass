@@ -1,0 +1,25 @@
+@import '../abstract/variaveis';
+
+// Uso de Nesting (Aninhamento)
+nav {
+    text-align: center;
+
+    ul {
+        li {
+            display: inline-block;
+            padding: 1rem;
+
+            a {
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: bold;
+                color: $cor-primaria;
+
+                // Uso de Parent Selector
+                &:hover {
+                    border-bottom: 2px solid $cor-terciaria;
+                }
+            }
+        }
+    }
+}
